@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 {
 	size_t s = 0;
 
-	if (h && s++)
+	if (!h->str)
 	{
 		printf("%s\n", h->str);
 		h = h->next;
