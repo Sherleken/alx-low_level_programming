@@ -11,9 +11,9 @@ size_t print_list(const list_t *h)
 {
 	size_t s = 0;
 
-	if (h && i++)
+	if (h && s++)
 	{
-		printf("%d\n");
+		printf("%s\n", h->str);
 		h = h->next;
 	}
 
